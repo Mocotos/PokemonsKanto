@@ -1,4 +1,4 @@
-data class Pokemon(val nome: String, val tipo: List<String>) 
+data class Pokemon(val nome: String, val tipo: List<String>, var vida: Int = 50)
 // o data class é o molde que vai ser puxado no main
 val pokemons = listOf(
     Pokemon("Bulbasaur", listOf("Grass", "Poison")),
@@ -29,7 +29,7 @@ val pokemons = listOf(
     Pokemon("Raichu", listOf("Electric")),
     Pokemon("Sandshrew", listOf("Ground")),
     Pokemon("Sandslash", listOf("Ground")),
-    Pokemon("Nidoran♀", listOf("Poison")),
+    Pokemon("NidoranF", listOf("Poison")),
     Pokemon("Nidorina", listOf("Poison")),
     Pokemon("Nidoqueen", listOf("Poison", "Ground")),
     Pokemon("Nidoran♂", listOf("Poison")),
@@ -83,7 +83,7 @@ val pokemons = listOf(
     Pokemon("Slowbro", listOf("Water", "Psychic")),
     Pokemon("Magnemite", listOf("Electric", "Steel")),
     Pokemon("Magneton", listOf("Electric", "Steel")),
-    Pokemon("Farfetch’d", listOf("Normal", "Flying")),
+    Pokemon("Farfetchd", listOf("Normal", "Flying")),
     Pokemon("Doduo", listOf("Normal", "Flying")),
     Pokemon("Dodrio", listOf("Normal", "Flying")),
     Pokemon("Seel", listOf("Water")),

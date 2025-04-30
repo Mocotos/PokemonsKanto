@@ -1,0 +1,96 @@
+ Pokémon Battle - Kotlin
+
+projeto de sistema de batalhas Pokémon desenvolvido em Kotlin, com foco em lógica de combate baseada em tipos e turnos O objetivo é simular batalhas entre dois times de Pokémon utilizando as vantagens e desvantagens de tipos.
+
+ Funcionalidades
+
+ -Lista dos 151 Pokémons da região de Kanto
+ -Sistema de vida e dano dos Pokémons
+ -Vantagens de tipo baseadas em efetividade (ex: Água > Fogo)
+ -Batalhas por turno com delays para melhor visualização
+ -Remoção de Pokémons derrotados
+ -Declaração do time vencedor
+
+ Tecnologias e Conceitos
+
+ -Kotlin
+ -Programação orientada a objetos (POO)
+ -Estruturas de dados: List, Map
+ -Controle de fluxo e funções
+ -Delay entre turnos com Thread.sleep
+
+ Estrutura
+
+ -Pokemon.kt: Contém o data class Pokemon com nome, tipos e vida
+ -tiposEfetivos: Mapa com os tipos e suas vantagens
+ -pokemons: Lista dos 151 Pokémons de Kanto com seus respectivos tipos
+ -main.kt: Lógica principal da batalha, escolha de times, cálculo de dano, verificação de vitória
+
+ Como rodar
+
+1. Certifique-se de ter o Kotlin instalado
+2. Compile e execute o main.kt usando um IDE como IntelliJ ou via terminal:
+
+
+SAIDA--------------------------------------
+
+🔥🔥 BATALHA INICIADA ENTRE Joao E As! 🔥🔥
+
+Escolha seu Pokémon para a batalha:
+1. Nidoran♂ (Poison)
+2. Shellder (Water)
+3. Onix (Rock, Ground)
+Digite o número do Pokémon: 1
+Escolha seu Pokémon para a batalha:
+1. Muk (Poison)
+2. Golem (Rock, Ground)
+3. Nidoking (Poison, Ground)
+Digite o número do Pokémon: 2
+
+Joao escolheu Nidoran♂
+As escolheu Golem
+
+SAIDA----------------
+🌀 -- Turno de Batalha --
+Olha o crítico TAPORRAAAkkkkk!
+Nidoran♂  atacou e causou 19 de dano.
+
+Golem atacou e causou 22 de dano.
+
+❤️ Vida de Nidoran♂: 28
+❤️ Vida de Golem: 31
+----------------------------
+
+🌀 -- Turno de Batalha --
+Olha o crítico TAPORRAAAkkkkk!
+Nidoran♂  atacou e causou 14 de dano.
+
+Golem atacou e causou 36 de dano.
+
+❤️ Vida de Nidoran♂: 0
+❤️ Vida de Golem: 17
+
+☠️ Nidoran♂ foi derrotado!
+----------------------------
+ --- RESULTADO FINAL ---
+🏆 Joao LEVA A INSÍGNIA DE ÁGUA!
+MENU
+1 - Digite seu Nick
+2 - Escolher Pokémons (3)
+3 - Mostrar Time
+4 - Batalhar
+5 - Sair...
+Escolha uma opção:
+
+ Melhorias futuras
+
+ -Interface gráfica para escolher os times.
+
+ -Animações ou efeitos de batalha.
+
+ -Tipos mais complexos e habilidade especiais.
+
+ -Integração com banco de dados para salvar placares.
+
+
+obrigado por testar ✌️
